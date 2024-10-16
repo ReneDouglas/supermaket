@@ -10,29 +10,29 @@
 <body>
     <div class="container mt-5">
         <h1 class="mb-4">Cadastro de Produto</h1>
-        <form>
+        <form th:action="@{/produtos/save}" th:object="${produto}" th:method="put">
             <!-- Campo Nome -->
             <div class="mb-3">
                 <label for="nomeProduto" class="form-label">Nome do Produto</label>
-                <input type="text" class="form-control" id="nomeProduto" placeholder="Digite o nome do produto" required>
+                <input type="text" class="form-control" id="nomeProduto" th:field="*{nome}" placeholder="Digite o nome do produto" required>
             </div>
 
             <!-- Campo Descrição -->
             <div class="mb-3">
                 <label for="descricaoProduto" class="form-label">Descrição</label>
-                <textarea class="form-control" id="descricaoProduto" rows="3" placeholder="Digite a descrição do produto" required></textarea>
+                <textarea class="form-control" id="descricaoProduto" th:field="*{descricao}" rows="3" placeholder="Digite a descrição do produto" required></textarea>
             </div>
 
             <!-- Campo Preço de Custo -->
             <div class="mb-3">
                 <label for="precoCusto" class="form-label">Preço de Custo (R$)</label>
-                <input type="number" class="form-control" id="precoCusto" placeholder="Digite o preço de custo" step="0.01" required>
+                <input type="number" class="form-control" id="precoCusto" th:field="*{precoDeCusto}" placeholder="Digite o preço de custo" step="0.01" required>
             </div>
 
             <!-- Campo Estoque -->
             <div class="mb-3">
                 <label for="estoqueProduto" class="form-label">Estoque</label>
-                <input type="number" class="form-control" id="estoqueProduto" placeholder="Digite a quantidade em estoque" required>
+                <input type="number" class="form-control" id="estoqueProduto" th:field="*{estoque}" placeholder="Digite a quantidade em estoque" required>
             </div>
 
             <!-- Botão de envio -->

@@ -1,11 +1,12 @@
 package br.edu.ifpi.supermarket.models;
 
 import java.math.BigDecimal;
+import java.util.UUID;
 
 
 public class Produto {
 
-    private int id;
+    private UUID id;
     private String nome;
     private String descricao;
     private BigDecimal precoDeCusto;
@@ -13,11 +14,11 @@ public class Produto {
 
     public Produto(){}
 
-    public int getId() {
+    public UUID getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(UUID id) {
         this.id = id;
     }
 
