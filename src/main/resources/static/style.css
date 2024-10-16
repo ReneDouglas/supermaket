@@ -1,0 +1,32 @@
+/* Estilo geral do body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Estilo do cabeçalho h1 */
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Estilo do parágrafo */
+p {
+    color: #555;
+    font-size: 1.2em;
+}
+
+/* Estilo do span que exibe o nome */
+span {
+    color: #0066cc;
+    font-weight: bold;
+    font-size: 1.2em;
+}
