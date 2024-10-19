@@ -48,6 +48,15 @@
                             th:text="${categoria.nome}"></option>
                 </select>
             </div>
+            <div class="mb-3">
+                <label for="test" class="form-label">Test</label>
+                <select id="test" th:field="*{categoria}">
+                    <option th:each="categoria : ${categorias}"
+                            th:value="${categoria}"
+                            th:text="${categoria.nome}"></option>
+                </select>
+            </div>
+            
 
             <!-- Botão de envio -->
             <button type="submit" class="btn btn-primary">Cadastrar Produto</button>

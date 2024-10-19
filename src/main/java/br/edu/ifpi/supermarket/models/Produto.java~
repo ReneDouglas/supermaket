@@ -54,12 +54,4 @@ public class Produto {
     public void setEstoque(int estoque) {
         this.estoque = estoque;
     }
-
-    public Categoria getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(Categoria categoria) {
-        this.categoria = categoria;
-    }
 }

@@ -28,7 +28,7 @@ public class ProdutoController {
             new Categoria("Bebidas")
         );
 
-        model.addAttribute("categorias", categorias);
+
         model.addAttribute("produto", new Produto());
         return "productManagement/produto-cadastro";
     }
