@@ -65,7 +65,7 @@ public class ProdutoController {
         return "redirect:/produtos";
     }
 
-    @PostMapping("/editar")
+    @PutMapping("/editar")
     public String atualizar(@ModelAttribute Produto produto, Model model) {
 
         produtos.forEach(p -> {
