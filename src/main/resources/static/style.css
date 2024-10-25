@@ -1,32 +1,40 @@
-/* Estilo geral do body */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
+html, body {
+    height: 100%;
+}
+.main-container {
+    height: calc(100vh - 80px); /* Subtrai a altura aproximada do nav */
+    padding: 20px;
+}
+.table-container {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
 }
-
-/* Estilo do cabeçalho h1 */
-h1 {
-    color: #333;
-    font-size: 2.5em;
-    margin-bottom: 10px;
+.table-scroll {
+    flex: 1;
+    overflow-y: auto;
+    min-height: 0;
 }
-
-/* Estilo do parágrafo */
-p {
-    color: #555;
-    font-size: 1.2em;
+.table-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
-
-/* Estilo do span que exibe o nome */
-span {
-    color: #0066cc;
-    font-weight: bold;
-    font-size: 1.2em;
+.table-content {
+    flex: 1;
+    overflow-y: auto;
+}
+/* Estilização da scrollbar para webkit browsers */
+.table-scroll::-webkit-scrollbar {
+    width: 8px;
+}
+.table-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.table-scroll::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+.table-scroll::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
