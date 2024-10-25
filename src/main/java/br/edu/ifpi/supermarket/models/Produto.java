@@ -1,6 +1,7 @@
 package br.edu.ifpi.supermarket.models;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.util.UUID;
 
 
@@ -12,6 +13,7 @@ public class Produto {
     private BigDecimal precoDeCusto;
     private int estoque;
     private Categoria categoria;
+    private LocalDate dataValidade;
 
     public Produto(){}
 
@@ -61,5 +63,13 @@ public class Produto {
 
     public void setCategoria(Categoria categoria) {
         this.categoria = categoria;
+    }
+
+    public LocalDate getDataValidade() {
+        return dataValidade;
+    }
+
+    public void setDataValidade(LocalDate dataValidade) {
+        this.dataValidade = dataValidade;
     }
 }

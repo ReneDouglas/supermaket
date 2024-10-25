@@ -12,11 +12,8 @@ public class HomeController {
 
     private Logger logger = Logger.getLogger(HomeController.class.getName());
 
-    @GetMapping("/home")
-    public String getHomePage(@RequestParam("nome") String nome,
-                              Model model){
-        model.addAttribute("nome", nome);
-        logger.severe("printando mensagem");
+    @GetMapping
+    public String getHomePage(Model model){
         return "homepage";
     }
 }

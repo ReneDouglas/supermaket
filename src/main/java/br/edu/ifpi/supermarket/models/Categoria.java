@@ -4,22 +4,22 @@ import java.util.UUID;
 
 public class Categoria {
 
-    private UUID id;
+    private Integer id;
     private String nome;
 
     public Categoria() {
     }
 
-    public Categoria(String nome) {
-        this.id = UUID.randomUUID();
+    public Categoria(Integer id, String nome) {
+        this.id = id;
         this.nome = nome;
     }
 
-    public UUID getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(UUID id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

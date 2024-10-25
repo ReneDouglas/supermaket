@@ -5,7 +5,6 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.core.io.ClassPathResource;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.templateresolver.FileTemplateResolver;
-
 import java.io.File;
 import java.io.IOException;
 
