@@ -1,2 +1,0 @@
-spring.application.name=supermarket
-spring.thymeleaf.cache=false
