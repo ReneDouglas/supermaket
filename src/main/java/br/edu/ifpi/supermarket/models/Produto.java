@@ -17,6 +17,16 @@ public class Produto {
 
     public Produto(){}
 
+    public Produto(UUID id, String nome, String descricao, BigDecimal precoDeCusto, int estoque, Categoria categoria, LocalDate dataValidade) {
+        this.id = id;
+        this.nome = nome;
+        this.descricao = descricao;
+        this.precoDeCusto = precoDeCusto;
+        this.estoque = estoque;
+        this.categoria = categoria;
+        this.dataValidade = dataValidade;
+    }
+
     public UUID getId() {
         return id;
     }
