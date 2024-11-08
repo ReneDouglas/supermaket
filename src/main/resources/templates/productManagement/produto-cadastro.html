@@ -34,14 +34,14 @@
                 <!-- Campo Preço de Custo -->
                 <div class="mb-3">
                     <label for="precoCusto" class="form-label">Preço de Custo (R$)</label>
-                    <input type="number" class="form-control" id="precoCusto" th:field="*{precoCusto}"
+                    <input type="number" class="form-control" id="precoCusto" th:field="*{precoDeCusto}"
                            placeholder="Digite o preço de custo" step="0.01" required>
                 </div>
 
                 <!-- Campo Estoque -->
                 <div class="mb-3">
                     <label for="estoqueProduto" class="form-label">Estoque</label>
-                    <input type="number" class="form-control" id="estoqueProduto"
+                    <input type="number" class="form-control" id="estoqueProduto" th:field="*{estoque}"
                            placeholder="Digite a quantidade em estoque" required>
                 </div>
 

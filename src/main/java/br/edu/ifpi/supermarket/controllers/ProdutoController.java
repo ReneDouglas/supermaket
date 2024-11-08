@@ -62,7 +62,7 @@ public class ProdutoController {
         produto.setCategoria(categoria);
         produtos.add(produto);
 
-        return "redirect:/produto";
+        return "redirect:/produtos";
     }
 
     @PutMapping("/editar")
